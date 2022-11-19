@@ -1,7 +1,7 @@
-fun TestOperacoesMap(pedidos: MutableMap<Int, Double>) {
+fun testOperacoesMap(pedidos: MutableMap<Int, Double>) {
         println(pedidos.get(4))
 
-        var orElse = pedidos.getOrElse(key = 5, defaultValue = ({
+        val orElse = pedidos.getOrElse(key = 5, defaultValue = ({
             999.1 * 89 / 77
         }))
 

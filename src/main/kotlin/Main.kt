@@ -11,6 +11,6 @@ fun main(args: Array<String>) {
 
     )
 
-    TestOperacoesMap(pedidos)
+    testOperacoesMap(pedidos)
 }
 
