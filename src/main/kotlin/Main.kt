@@ -24,6 +24,29 @@ fun main(args: Array<String>) {
 
     println(pedidosFreteGratis)
 
+    val pedidosGroup = pedidos.groupBy{ pedido -> pedido.valor > 30 }
+
+    val comfreteGratis = pedidosGroup[true]
+    val semFreteGratis = pedidosGroup[false]
+
+    println("Pedidos com frete gratis: $comfreteGratis")
+    println("Pedidos sem frete gratis: $semFreteGratis")
+
+
+    val nomes = listOf<String>("Caike", "Ingrid", "Aquila", "Carlos", "Priscila", "Paulo", "Timoteo", "Lucas", "Filemon", "Tito", "Filipe", "Atos")
+
+    val nomesAgrupadados = nomes.groupBy { nome -> nome.first() }
+
+    println(nomesAgrupadados)
+
+    val pedidosAgrupados: Grouping<Pedido, Boolean> = pedidos.groupingBy { pedido ->
+        pedido.valor > 50.0
+    }
+
+    println(pedidosAgrupados)
+
+
+
 
 
 
