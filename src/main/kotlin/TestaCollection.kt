@@ -27,7 +27,7 @@ class bancoDeNomes(){
 }
 
 
-private fun testaColecao() {
+public fun testaColecao() {
     val nomes: Collection<String> = mutableListOf("Caike", "Ingrid", "Jose", "Edinelva", "Leonardo", "Lucas")
 
     nomes.forEach {

@@ -1,4 +1,4 @@
-fun testOperacoesMap(pedidos: MutableMap<Int, Double>) {
+fun TestOperacoesMap(pedidos: MutableMap<Int, Double>) {
         println(pedidos.get(4))
 
         val orElse = pedidos.getOrElse(key = 5, defaultValue = ({
